@@ -1,0 +1,822 @@
+html {
+  font-family: 'Asap', 'Poppins', sans-serif;
+}
+
+#container-fluid {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 27%;
+  z-index: 1;
+}
+
+#game-board {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  border: 1px solid #1a1a1a;
+  background-color: rgb(192, 224, 192);
+  rotate: 90deg;
+}
+
+#center-square {
+  position: relative;
+  margin: 99px 99px 100px 99px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #1a1a1a;
+}
+
+#community-chest {
+  position: relative;
+  margin: 15% 10%;
+  width: 150px;
+  height: 100px;
+  border: 1px solid #1a1a1a;
+  rotate: 135deg;
+  text-align: center;
+  background-color: lightblue;
+}
+
+#community-chest i,
+#chance i {
+  font-size: 3rem;
+  display: block;
+  margin: 10% 0;
+}
+
+
+#chance {
+  position: relative;
+  margin: 30% 60%;
+  width: 150px;
+  height: 100px;
+  border: 1px solid #1a1a1a;
+  rotate: -45deg;
+  text-align: center;
+  background-color: lightpink;
+}
+
+#center-logo {
+  position: relative;
+  margin: -75% 2%;
+  width: 450px;
+  height: 100px;
+  font-size: 4rem;
+  rotate: -45deg;
+  text-align: center;
+}
+
+#corner-block1 {
+  position: relative;
+  width: 101px;
+  height: 101px;
+  top: -700px;
+  left: -1px;
+  border: 2px solid #1a1a1a;
+}
+
+#corner-block1 p {
+  position: relative;
+  top: 35px;
+  left: -8px;
+  rotate: 135deg;
+}
+
+#corner-block2 {
+  position: relative;
+  width: 101px;
+  height: 101px;
+  top: -801px;
+  left: 598px;
+  border: 2px solid #1a1a1a;
+}
+
+#corner-block2 p {
+  position: relative;
+  top: -25px;
+  left: 2px;
+  rotate: 225deg;
+}
+
+#corner-block3 {
+  position: relative;
+  width: 101px;
+  height: 101px;
+  top: -303px;
+  left: 598px;
+  border: 2px solid #1a1a1a;
+}
+
+#left-p i {
+  position: relative;
+  top: -6px !important;
+  left: 74px !important;
+  rotate: 0deg !important;
+  font-size: 1.5rem !important;
+  color: #1a1a1a77;
+}
+
+#corner-block4 {
+  position: relative;
+  width: 101px;
+  height: 101px;
+  top: -404px;
+  left: -1px;
+  border: 2px solid #1a1a1a;
+}
+
+#jail {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  top: -42px;
+  left: 29px;
+  border: 2px solid #1a1a1a;
+}
+
+#corner-block1 i {
+  position: relative;
+  top: 15px;
+  left: 55px;
+  font-size: 2rem;
+  rotate: 135deg;
+}
+
+#corner-block2 i {
+  position: relative;
+  top: 45px;
+  left: 10px;
+  font-size: 2.5rem;
+  rotate: 225deg;
+}
+
+#corner-block3 i {
+  position: relative;
+  top: 10px;
+  left: 0;
+  font-size: 5rem;
+  rotate: 315deg;
+}
+
+#corner-block4 #jail i {
+  position: relative;
+  font-size: 3rem;
+  top: 5px;
+  left: 15px;
+  rotate: 405deg;
+}
+
+#just {
+  position: relative;
+  rotate: 90deg;
+  top: 50px;
+  left: -38px;
+}
+
+#visiting {
+  position: relative;
+  top: -37px;
+  left: 20px;
+}
+
+#side-one {
+  position: relative;
+  top: -500px;
+  left: 535px;
+}
+
+#road11 {
+  position: relative;
+  top: -5px;
+  left: 10px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road12 {
+  position: relative;
+  top: -83px;
+  left: -67px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road13 {
+  position: relative;
+  top: -161px;
+  left: -98px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road14 {
+  position: relative;
+  top: -239px;
+  left: -175px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road15 {
+  position: relative;
+  top: -317px;
+  left: -218px;
+  width: 66px;
+  height: 101px;
+  font-size: .7rem;
+  word-wrap: break-word;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+#road15 i {
+  font-size: 1.5rem;
+}
+
+#road16 {
+  position: relative;
+  top: -418px;
+  left: -273px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road17 {
+  position: relative;
+  top: -496px;
+  left: -350px;
+  width: 101px;
+  height: 55px;
+  font-size: 1.3rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road18 {
+  position: relative;
+  top: -574px;
+  left: -381px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road19 {
+  position: relative;
+  top: -675px;
+  left: -436px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#voortrekker {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(66, 38, 22);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#railway {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(66, 38, 22);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#brodigan {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(121, 160, 218);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#stokroos {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(121, 160, 218);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#halifax {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(121, 160, 218);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#side-two {
+  position: relative;
+  top: -2445px;
+  left: 640px;
+  rotate: 270deg;
+}
+
+#side-three {
+  position: relative;
+  top: -2146px;
+  left: -639px;
+  rotate: 90deg;
+}
+
+#side-four {
+  position: relative;
+  top: -4092px;
+  left: -534px;
+  rotate: 180deg;
+}
+
+#road21 {
+  position: relative;
+  top: -5px;
+  left: 10px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road22 {
+  position: relative;
+  top: -83px;
+  left: -67px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road23 {
+  position: relative;
+  top: -161px;
+  left: -98px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road24 {
+  position: relative;
+  top: -239px;
+  left: -175px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road25 {
+  position: relative;
+  top: -317px;
+  left: -218px;
+  width: 66px;
+  height: 101px;
+  font-size: .7rem;
+  word-wrap: break-word;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+#road25 i {
+  font-size: 1.5rem;
+}
+
+#road26 {
+  position: relative;
+  top: -418px;
+  left: -273px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road27 {
+  position: relative;
+  top: -496px;
+  left: -350px;
+  width: 101px;
+  height: 55px;
+  font-size: 1.3rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road28 {
+  position: relative;
+  top: -574px;
+  left: -381px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road29 {
+  position: relative;
+  top: -675px;
+  left: -436px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road31 {
+  position: relative;
+  top: -5px;
+  left: 10px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road32 {
+  position: relative;
+  top: -83px;
+  left: -67px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road33 {
+  position: relative;
+  top: -161px;
+  left: -98px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road34 {
+  position: relative;
+  top: -239px;
+  left: -175px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road35 {
+  position: relative;
+  top: -317px;
+  left: -218px;
+  width: 66px;
+  height: 101px;
+  font-size: .7rem;
+  word-wrap: break-word;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+#road35 i {
+  font-size: 1.5rem;
+}
+
+#road36 {
+  position: relative;
+  top: -418px;
+  left: -273px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road37 {
+  position: relative;
+  top: -496px;
+  left: -350px;
+  width: 101px;
+  height: 55px;
+  font-size: 1.3rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road38 {
+  position: relative;
+  top: -574px;
+  left: -381px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road39 {
+  position: relative;
+  top: -675px;
+  left: -436px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road41 {
+  position: relative;
+  top: -5px;
+  left: 10px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road42 {
+  position: relative;
+  top: -83px;
+  left: -67px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road43 {
+  position: relative;
+  top: -161px;
+  left: -98px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road44 {
+  position: relative;
+  top: -239px;
+  left: -175px;
+  width: 101px;
+  height: 55px;
+  font-size: 1rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road45 {
+  position: relative;
+  top: -317px;
+  left: -218px;
+  width: 66px;
+  height: 101px;
+  font-size: .7rem;
+  word-wrap: break-word;
+  border: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+#road45 i {
+  font-size: 1.5rem;
+}
+
+#road46 {
+  position: relative;
+  top: -418px;
+  left: -273px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road47 {
+  position: relative;
+  top: -496px;
+  left: -350px;
+  width: 101px;
+  height: 55px;
+  font-size: 1.3rem;
+  border: 1px solid #1a1a1a;
+  rotate: 270deg;
+  text-align: center;
+}
+
+#road48 {
+  position: relative;
+  top: -574px;
+  left: -381px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#road49 {
+  position: relative;
+  top: -675px;
+  left: -436px;
+  width: 55px;
+  height: 101px;
+  font-size: .6rem;
+  border: 1px solid #1a1a1a;
+}
+
+#kei {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(64, 167, 32);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#hospital {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(64, 167, 32);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#bayley {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(34, 25, 156);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#oak {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(34, 25, 156);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#vaal {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(34, 25, 156);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#gladiator {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 37, 37);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#spitfire {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 37, 37);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#master {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(251, 255, 21);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#aerodrome {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(251, 255, 21);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#webb {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(251, 255, 21);
+  color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#warwick {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 37, 198);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#typhoon {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 37, 198);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#wellington {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 95, 31);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#defiant {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 95, 31);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+#ensign {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  background-color: rgb(206, 95, 31);
+  color: #f1f1f1;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.price {
+  text-align: center;
+  padding: 80% 10%;
+}
+
+button {
+  position: relative;
+  top: 151px;
+  left: 541px;
+  width: 50px;
+  height: 50px;
+  scale: 1.0;
+  z-index: 2;
+}
+
+button:hover {
+  cursor: pointer;
+scale: 1.1;
+}
+
+.rotate {
+  rotate: 90deg;
+}
